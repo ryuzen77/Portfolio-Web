@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section">
+            <div class="container">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Hi, I'm <span id="name">Muhamad Zen Fikri</span></p>
+                <p>I am an AI Enthusiast</p>
+                <button id="cta-button">View My Work</button>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <div class="about-content">
+                    <img src="images/profile.png" alt="Profile Picture" class="profile-img">
+                    <div class="bio">
+                        <h2>About Me</h2>
+                        <p>I am a dedicated AI and Machine Learning enthusiast with a strong foundation in computer science and data analysis. As a Computer Analyst at the National Resilience Institute of Indonesia, I specialize in developing intelligent systems and data-driven solutions.</p>
+                        <p>My expertise includes developing machine learning models, implementing computer vision systems, and creating interactive data visualizations. I am passionate about using AI technology to solve real-world problems and drive innovation.</p>
+                        <div class="skills">
+                            <h3>Technical Skills</h3>
+                            <ul id="skills-list">
+                                <!-- Skills will be added via JavaScript -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="projects-grid" id="projects-container">
+                    <!-- Projects will be added via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <div class="contact-container">
+                    <!-- Form Kontak -->
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Your Name</label>
+                            <input type="text" id="contact-name" placeholder="...." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email Address</label>
+                            <input type="email" id="contact-email" placeholder="...." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Your Message</label>
+                            <textarea id="contact-message" rows="5" placeholder="Type your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                    
+                    <!-- Social Media -->
+                    <div class="social-media">
+                        <h3>Connect With Me</h3>
+                        <p>Feel free to reach out through these platforms:</p>
+                        <div class="social-links">
+                            <a href="https://github.com/ryuzen77" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ryuzen77/" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="mailto:youremail@example.com" class="social-link">
+                                <i class="fas fa-envelope"></i>
+                                <span>Email</span>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="form-status" class="status-message"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
